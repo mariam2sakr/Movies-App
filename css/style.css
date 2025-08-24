@@ -59,7 +59,7 @@ body{
     color: black;
     position: absolute;
     z-index: 10;
-    top: 35%;
+    top: 30%;
     left: 6%;
     letter-spacing: 3px;
 }
@@ -69,7 +69,7 @@ body{
     font-weight: 800;
     position: absolute;
     z-index: 10;
-    top: 39%;
+    top: 35%;
     left: 6%;
     letter-spacing: 3px;
     line-height: 90px;
@@ -78,7 +78,7 @@ body{
 .book{
     position: absolute;
     z-index: 10;
-    top: 70%;
+    top: 75%;
     left: 6%;
 }
 /* ///////////////////////// MOVIES //////////////////////////////////////////////// */
@@ -237,6 +237,7 @@ body{
       top: 35%;
     }
     .text-main{
+      margin-top: 10%;
       font-size: 47px;
       line-height: 55px;
     }
