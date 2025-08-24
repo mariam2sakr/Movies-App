@@ -212,10 +212,11 @@ body{
 @media(max-width:600px){
     .navbar{
         background-color: white;
+        margin: 0px -20px !important;
     }
     .navbar-brand{
         color  :#ff2c1f;
-        font-size: 22px;
+        font-size: 25px;
     }
     .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
@@ -229,8 +230,8 @@ body{
     .nav-link.active + .under-line {
     width: 30%;
     }
-    .carousel-item{
-      margin-top: 65px;
+    .carousel-item {
+        margin-top: 40px;
     }
     .p-main{
       top: 35%;
@@ -239,7 +240,7 @@ body{
       font-size: 47px;
       line-height: 55px;
     }
-   .book{
+    .book{
       top: 68%;
     }
     .container {
@@ -251,6 +252,10 @@ body{
    }
    .subs-box{
     width: 90%;
+    padding: 10px;
+   }
+   .subs-box input{
+    width: 120px;
    }
    .btn-subs{
     padding: 0px 10px;
