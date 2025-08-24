@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+/* /////////////////////////   NAVBAR      //////////////////////////////////////////////// */
+.navbar-brand{
+    font-weight: 800;
+    color: white;
+    font-size: 28px;
+}
+.nav-link{
+    color: #ff2c1f !important;
+    margin: 0px 10px;
+    font-weight: 600;
+}
+.navbar.scrolled {
+  background-color: rgb(255, 255, 255) !important;
+}
+.navbar.scrolled .navbar-brand{
+    color: black;
+}
+.under-line{
+    width: 0px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #ff2c1f;
+    margin: auto;
+    margin-top: -4px;
+    transition: width 0.4s ease;
+}
+.nav-link:hover + .under-line {
+    width: 70%;
+}
+.nav-link.active + .under-line {
+    width: 70%;
+}
+/* //////////////////////////  HOME     /////////////////////////////////////////////// */
+.carousel-item {
+    height: 100vh;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
+.carousel-item {
+  position: relative;
+}
+.p-main{
+    font-weight: 500;
+    color: black;
+    position: absolute;
+    z-index: 10;
+    top: 35%;
+    left: 6%;
+    letter-spacing: 3px;
+}
+.text-main{
+    font-size: 70px;
+    color: white;
+    font-weight: 800;
+    position: absolute;
+    z-index: 10;
+    top: 39%;
+    left: 6%;
+    letter-spacing: 3px;
+    line-height: 90px;
+    text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.362);
+}
+.book{
+    position: absolute;
+    z-index: 10;
+    top: 70%;
+    left: 6%;
+}
+/* ///////////////////////// MOVIES //////////////////////////////////////////////// */
+#Movies{
+    width: 100%;
+    min-height: 100%;
+    padding: 100px 0px 0px 0px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+    padding: 0px 0px 10px 0px;
+}
+.open-movies , .coming-title{
+    color: white;
+    margin-right: auto;
+}
+.line-open-movies , .line-coming-soon{
+    width: 100%;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #ff2c1f;
+    margin-bottom: 20px;
+    margin-top:-20px ;
+}
+.card {
+  background-color: black;
+  width: 210px;
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  transition: .5s ease;
+}
+.card img:hover{
+    box-shadow: 0 5px 18px rgba(255,0,0,0.4);
+    transform: scale(1.04);
+    transform: translateY(-10px);
+}
+.card h5 {
+  color: #ff2c1f;   
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+.card p {
+  color: white;  
+  font-size:14px;
+}
+/* //////////////////////////// COMING (Design is the same as the Movies Page Design)  ///////////////////////////////////////////// */
+#Coming{
+    width: 100%;
+    min-height: 100%;
+    padding: 100px 0px 0px 0px;
+}
+/* ///////////////////////  LAST PAGE ////////////////////////////////////////////////// */
+#News{
+    width: 100%;
+    min-height: 100vh;
+    padding: 130px 0px 0px 0px;
+}
+.gradient-text{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 80px;
+    background: linear-gradient(90deg, #b30000, #ff0000, #ff4d4d, #ff6666, #ff9966);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.subs-box{
+    width: 40%;
+    height: 60px;
+    background-color: white;
+    border-radius: 20px;
+    margin:40px auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.432);
+}
+.subs-box input{
+    border: none;
+    outline: none;
+}
+.btn-subs{
+    background-color: #ff2c1f;
+    color: white;
+    font-weight: 400;
+    padding: 0px 20px;
+    border-radius: 20px ;
+    border: none;
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.432)
+}
+.footer{
+    width: 85%;
+    min-height: 40px;
+    margin: 180px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.icons i{
+    color: #ff2c1f;
+    font-size: 25px;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.icons i:hover{
+    background-color: #ff2c1f;
+    color: white;
+}
+.p-footer{
+    text-align: center;
+    color: white;
+    margin-top: -100px;
+}
+/* ///////////////////////  RESPONSIVE IN PHONES  ////////////////////////////////////////////////// */
+@media(max-width:600px){
+    .navbar{
+        background-color: white;
+    }
+    .navbar-brand{
+        color  :#ff2c1f;
+        font-size: 22px;
+    }
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .under-line{
+      margin-bottom: 20px;
+    }
+    .nav-link:hover + .under-line {
+      width: 30%;
+    }
+    .nav-link.active + .under-line {
+    width: 30%;
+    }
+    .carousel-item{
+      margin-top: 65px;
+    }
+    .p-main{
+      top: 35%;
+    }
+    .text-main{
+      font-size: 47px;
+      line-height: 55px;
+    }
+   .book{
+      top: 68%;
+    }
+    .container {
+      width: 90%;
+    }
+   .card {
+      flex: 0 0 calc(50% - 15px); 
+      max-width: calc(50% - 15px);
+   }
+   .subs-box{
+    width: 90%;
+   }
+   .btn-subs{
+    padding: 0px 10px;
+   }
+   .open-movies , .coming-title{
+    font-size: 18px;
+    font-weight: 600;
+   }
+   .icons i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 22px;
+   }
+}
+/* ///////////////////////  RESPONSIVE IN TABLETS  ////////////////////////////////////////////////// */
+@media(min-width:600px) and (max-width:885px){
+    .nav-link{
+        margin: 0px;
+    }
+    .book{
+      top: 60%;
+    }
+    .subs-box{
+    width: 70%;
+   }
+}
